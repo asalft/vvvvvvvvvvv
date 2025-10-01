@@ -1,0 +1,35 @@
+{
+  "name": "اسم تطبيقك هنا",
+  "description": "وصف قصير لتطبيقك",
+  "keywords": ["telegram", "bot", "python"],
+  "image": "heroku/python",
+  "addons": [],
+  "env": {
+    "API_ID": {
+      "description": "معرف API الخاص بك من Telegram.",
+      "value": "12345",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "مفتاح API HASH الخاص بك من Telegram.",
+      "required": true
+    },
+    "TOKEN": {
+      "description": "توكن البوت الخاص بك من BotFather.",
+      "required": true
+    },
+    "START_PIC": {
+      "description": "رابط صورة بدء البوت.",
+      "required": false
+    },
+    "CHAT": {
+      "description": "معرف الدردشة أو القناة.",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
